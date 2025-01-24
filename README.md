@@ -108,6 +108,12 @@ Here are some common network Chain IDs:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Credits
+
+Special thanks to [@BarneyChambers](https://github.com/BarneyChambers) for guidance on the correct approach to handling stuck transactions through nonce replacement.
+
+This project was generated using [Cursor](https://cursor.sh/), a powerful AI-powered code editor.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
