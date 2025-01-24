@@ -1,0 +1,15 @@
+{
+  "name": "tx-rescue",
+  "version": "1.0.0",
+  "description": "Utility to rescue stuck transactions by replacing them with a 0-value transaction using the same nonce",
+  "scripts": {
+    "unstuck": "hardhat run scripts/unstuck.ts --network custom"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0"
+  }
+}
