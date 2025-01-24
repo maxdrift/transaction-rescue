@@ -57,7 +57,7 @@ RPC_URL=your_network_rpc_url
 CHAIN_ID=1  # e.g., 1 for Ethereum, 137 for Polygon, etc.
 
 # Stuck Transaction Details
-NONCE=123  # The nonce of your stuck transaction
+NONCE=123  # The nonce of your LAST CONFIRMED transaction + 1
 ```
 
 ## Usage
@@ -76,11 +76,18 @@ The script will:
 
 ## Finding the Stuck Transaction Nonce
 
-1. Open MetaMask
+⚠️ **Important**: The nonce you need to use is the nonce of your last **confirmed** transaction **plus 1**. This ensures you're targeting the correct stuck transaction. Here's how to find it:
+
+1. Open MetaMask (or your wallet)
 2. Go to Activity/History
-3. Find the stuck/pending transaction
+3. Find your last **confirmed** (successfully mined) transaction
 4. Click on the transaction
-5. Look for the nonce value (usually shown in transaction details)
+5. Look for the nonce value
+6. Add 1 to this nonce value - this is the value you should use
+
+For example:
+- If your last confirmed transaction has nonce 108
+- Then you should use nonce 109 in the `.env` file
 
 ## Common Chain IDs
 
